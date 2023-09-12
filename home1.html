@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add the styles from the second code here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="home1.html">Home</a>
+            <a href="poll-creation1.html">Create a Poll</a>
+            <a href="poll-details1.html">Poll Details</a> <!-- Add this line for Poll Details -->
+            <a href="profile.html">Profile</a>
+            <a href="contact1.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="recent-polls">
+            <h2 class="section-title">Recent Polls</h2>
+            <div class="poll-card">
+                <h3>What is your favorite color?</h3>
+                <p>Choose your favorite color from the options.</p>
+                <a href="poll-details.html" onclick="checkLogin()">Vote now</a>
+            </div>
+            <div class="poll-card">
+                <h3>Who is your favorite superhero?</h3>
+                <p>Select your favorite superhero from the list.</p>
+                <a href="poll-details.html" onclick="checkLogin()">Vote now</a>
+            </div>
+            <div class="poll-card">
+                <h3>What is your favorite food?</h3>
+                <p>Pick your favorite food item from the choices.</p>
+                <a href="poll-details.html" onclick="checkLogin()">Vote now</a>
+            </div>
+        </section>
+        <section class="create-poll">
+            <h2 class="section-title">Create a Poll</h2>
+            <a href="poll-creation.html" class="create-poll-button">Create a Poll</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Your Opinion Sharing Platform. All rights reserved.
+    </footer>
+</body>
+</html>

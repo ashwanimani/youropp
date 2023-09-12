@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform - Poll Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the poll details */
+        .poll-details {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .poll-details h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .poll-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .poll-card h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .poll-card p {
+            font-size: 16px;
+        }
+
+        /* Styles for the success message */
+        .success-message {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="poll-creation.html">Create a Poll</a>
+            <a href="poll-details.html">Poll Details</a> <!-- Add this line for Poll Details -->
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a> <!-- Add this line for Contact -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="poll-details">
+            <h2>Poll Details</h2>
+            <div class="poll-card">
+                <h3>What is your favorite color?</h3>
+                <p>Choose your favorite color from the options.</p>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="color-option-1" name="color-options">
+                        <label for="color-option-1">Red</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="color-option-2" name="color-options">
+                        <label for="color-option-2">Blue</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="color-option-3" name="color-options">
+                        <label for="color-option-3">Green</label>
+                    </div>
+                </div>
+                <button class="vote-button" onclick="showSuccessMessage()">Vote</button>
+            </div>
+            <!-- Add more poll cards as needed -->
+        </section>
+        <!-- Success message div -->
+        <div class="success-message" id="success-message">
+            Your vote is submitted.
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; 2023 Your Opinion Sharing Platform</p>
+    </footer>
+
+    <!-- JavaScript to show/hide success message and hide it after 3 seconds -->
+    <script>
+        function showSuccessMessage() {
+            var successMessage = document.getElementById("success-message");
+            successMessage.style.display = "block";
+            setTimeout(function() {
+                successMessage.style.display = "none";
+            }, 3000); // Hide the message after 3 seconds
+        }
+    </script>
+</body>
+</html>

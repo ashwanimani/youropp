@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the profile page */
+        .profile {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile h2 {
+            color: #007BFF;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+        }
+
+        .profile-links {
+            margin-top: 20px;
+        }
+
+        .profile-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .profile-links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="home1.html">Home</a>
+            <a href="poll-creation1.html">Create a Poll</a>
+            <a href="poll-details1.html">Poll Details</a> <!-- Add this line for Poll Details -->
+            <a href="profile.html">Profile</a>
+            <a href="contact1.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <p><strong>Email:</strong> <?php echo $email; ?></p>
+                <p><strong>Joined:</strong> January 1, 2023</p>
+            </div>            
+            <div class="profile-links">
+                <a href="#">Edit Profile</a>
+                <a href="#">Change Password</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; 2023 Your Opinion Sharing Platform</p>
+    </footer>
+</body>
+</html>

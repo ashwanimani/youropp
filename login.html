@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the login form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+
+        /* Square container for login form */
+        .login-form {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Success message style */
+        .success-message {
+            text-align: center;
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2e2c2c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="poll-creation.html">Create a Poll</a>
+            <a href="login.html" id="login-link">Login</a>
+            <a href="index.html" id="register-link">Register</a>
+            <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+            <a href="poll-details.html" id="poll-details-link" style="display: none;">Poll Details</a>
+            <a href="contact.html">Contact</a>
+            <!-- Add other navigation links as needed -->
+        </nav>
+    </header>
+    <main>
+        <!-- Square container for login form -->
+        <section class="login-form">
+            <h2>Login</h2>
+            <!-- Login form -->
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="user_password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <div class="register-link">
+                <p>Don't have an account? <a href="index.html">Register here</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; 2023 Your Opinion Sharing Platform</p>
+    </footer>
+</body>
+</html>

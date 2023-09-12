@@ -1,0 +1,256 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think and Talk</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic CSS for this page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #555;
+        }
+
+        .featured-polls {
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        /* Your additional CSS rules can be added here */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ideogram.ai/api/images/direct/42ghA7TAT8aBYRZwQN7zZg" alt="Banner Image">
+        <h1>Welcome to Think and Talk</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Polls</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Share Your Thoughts and Opinions</h2>
+            <p>Join the conversation and create polls to gather opinions from others.</p>
+            <a href="#" class="cta-button">Get Started</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Think and Talk. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Add the styles from the second code here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="poll-creation.html">Create a Poll</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="recent-polls">
+            <h2 class="section-title">Recent Polls</h2>
+            <div class="poll-card">
+                <h3>What is your favorite color?</h3>
+                <p>Choose your favorite color from the options.</p>
+                <a href="#" onclick="checkLogin()">Vote now</a>
+            </div>
+            <div class="poll-card">
+                <h3>Who is your favorite superhero?</h3>
+                <p>Select your favorite superhero from the list.</p>
+                <a href="#" onclick="checkLogin()">Vote now</a>
+            </div>
+            <div class="poll-card">
+                <h3>What is your favorite food?</h3>
+                <p>Pick your favorite food item from the choices.</p>
+                <a href="#" onclick="checkLogin()">Vote now</a>
+            </div>
+        </section>
+        <section class="create-poll">
+            <h2 class="section-title">Create a Poll</h2>
+            <a href="poll-creation.html" class="create-poll-button">Create a Poll</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Your Opinion Sharing Platform. All rights reserved.
+    </footer>
+
+    <script>
+        // Simulated user login function
+        function simulateLogin() {
+            // Set a flag to indicate that the user is logged in
+            loggedIn = true;
+            // Show the "Profile" link
+            document.getElementById("profile-link").style.display = "block";
+        }
+
+        // Function to check if the user is logged in before voting
+        function checkLogin() {
+            if (!loggedIn) {
+                // Display a message
+                alert("Kindly login first to vote.");
+                // Redirect to the login page
+                window.location.href = "login.html";
+            } else {
+                // User is logged in, proceed with voting logic here
+                // For now, we'll just simulate voting
+                alert("Vote submitted successfully!");
+            }
+        }
+
+        // Simulated user logout function
+        function simulateLogout() {
+            // Clear the flag to indicate that the user is logged out
+            loggedIn = false;
+            // Hide the "Profile" link
+            document.getElementById("profile-link").style.display = "none";
+        }
+
+        // Initially, the user is not logged in
+        var loggedIn = false;
+    </script>
+</body>
+</html>

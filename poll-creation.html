@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Opinion Sharing Platform - Poll Creation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the poll creation form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+
+        .poll-form {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            max-width: 400px; /* Set the maximum width of the square box */
+            margin: 0 auto; /* Center the box horizontally */
+        }
+
+        .poll-form h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-option-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-option-button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Your Opinion Sharing Platform</h1>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="poll-creation.html">Create a Poll</a>
+            <a href="login.html">Login</a>
+            <a href="index.html">Register</a>
+            <a href="contact.html">Contact</a> <!-- Added "Contact" link here -->            <!-- Show "Poll Details" link only when the user is logged in -->
+            <a href="poll-details.html" id="poll-details-link" style="display: none;">Poll Details</a>
+        </nav>
+    </header>
+    <main>
+        <section class="poll-form">
+            <h2>Poll Creation</h2>
+            <!-- Poll creation form -->
+            <form onsubmit="return checkLogin()">
+                <div class="form-group">
+                    <label for="poll-question">Poll Question:</label>
+                    <input type="text" id="poll-question" name="poll-question" placeholder="Enter your poll question" required>
+                </div>
+                <div class="form-group">
+                    <label for="option-1">Option 1:</label>
+                    <input type="text" id="option-1" name="option-1" placeholder="Enter option 1" required>
+                </div>
+                <div class="form-group">
+                    <label for="option-2">Option 2:</label>
+                    <input type="text" id="option-2" name="option-2" placeholder="Enter option 2" required>
+                </div>
+                <!-- Add more options as needed -->
+                <div class="form-group">
+                    <button class="add-option-button">Add Option</button>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create Poll">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; 2023 Your Opinion Sharing Platform</p>
+    </footer>
+
+    <script>
+        // Function to check if the user is logged in before creating a poll
+        function checkLogin() {
+            if (!loggedIn) {
+                // Display a message
+                alert("Kindly login first to create a poll.");
+                // Redirect to the login page
+                window.location.href = "login.html";
+                return false; // Prevent form submission
+            }
+            return true; // Proceed with form submission
+        }
+
+        // Initially, the user is not logged in
+        var loggedIn = false;
+    </script>
+</body>
+</html>
